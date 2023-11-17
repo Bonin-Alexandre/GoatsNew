@@ -57,6 +57,7 @@ class GoatController extends Controller
         $g->color = request()->color;
         $g->sex = request()->sex == 'Mr.' ? true : false ;
         $g->birthday = request()->birthday;
+        $g->user_id = request()->user_id;
         $g->save();
         return redirect('/goats');
     }

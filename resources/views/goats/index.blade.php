@@ -33,6 +33,12 @@
                     <th scope="col" class="px-6 py-3">
                         Sexe
                     </th>
+                    <th scope="col" class="px-6 py-3">
+                        Détails d'une chèvre
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Supprimer une chèvre
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -63,6 +69,18 @@
                     <td class="px-6 py-4 text-right">
                         <a href="/goats/{{ $goat->id }}">Voir plus</a>
                     </td>
+                    <td class="px-6 py-4 text-right">
+                    <form method="post" action="/goats/{{ $goat->id }}" class="mt-4">
+                        @csrf
+                        @method('DELETE')
+                    
+                        <button type="submit"
+                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette chèvre ?')"
+                                class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                            Supprimer
+                        </button>
+                    </form>  
+                    </td>                  
                 </tr>
             @endforeach
             @endsection
