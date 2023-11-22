@@ -1,27 +1,21 @@
 <table class="w-full bg-white border border-gray-300 rounded">
-    <head class="text-xs text-gray-700 uppercase bg-gray-50">
+    <div class="mt-4 flex justify-center mb-4">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" title="Redirection sur le site de gestion/création">
+            <a href="/goats">Accéder au site</a>
+        </button>
+    </div>
+</table>
+
+
+<table class="w-full bg-white border border-gray-300 rounded">
+    <head>
         <tr>
-            <x-th>
-                Id
-            </x-th>
-            <x-th>
-                Nom
-            </x-th>
-            <x-th>
-                Couleur
-            </x-th>
-            <x-th>
-                Prix
-            </x-th>
-            <x-th>
-                Anniversaire
-            </x-th>
-            <x-th>
-                Sexe
-            </x-th>
-            <x-th>
-                Détails d'une chèvre
-            </x-th>
+            <x-th>ID</x-th>
+            <x-th>Nom</x-th>
+            <x-th>Couleur</x-th>
+            <x-th>Prix</x-th>
+            <x-th>Anniversaire</x-th>
+            <x-th>Sexe</x-th>
         </tr>
     </head>
     <body>
@@ -37,7 +31,6 @@
                 <x-td>{{ $goat->price }}</x-td>
                 <x-td>{{ $goat->birthday }}</x-td>
                 <x-td>{{ $goat->sex }}</x-td>
-                <x-td><a href="/goats/{{ $goat->id }}">Voir plus</a></x-td>                  
             </tr>
         @endforeach
     </body>
