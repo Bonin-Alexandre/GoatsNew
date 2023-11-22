@@ -19,12 +19,14 @@ class DatabaseSeeder extends Seeder
         $u->name = 'BoninA';
         $u->email = 'alexandre.bonin01@gmail.com';
         $u->password = Hash::make('AlexDev23');
+        $u->is_admin = true;
         $u->save();
 
         $u = new User;
         $u->name = 'CoucouA';
         $u->email = 'alexandre.coucou01@gmail.com';
         $u->password = Hash::make('CoucouDev23');
+        $u->is_admin = false;
         $u->save();
 
         $this->call([
