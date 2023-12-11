@@ -1,3 +1,5 @@
+![Logo du Gestionnaire de Chèvres]((https://c.clc2l.com/t/m/p/mpg-4kwM3o.png))
+
 # Gestionnaire de Chèvres
 
 Bienvenue dans le Gestionnaire de Chèvres, un projet construit avec Laravel. Ce gestionnaire vous permet de créer, modifier et supprimer des chèvres. De plus, un tableau de bord est disponible pour afficher les chèvres qui vous appartiennent.
@@ -7,7 +9,7 @@ Bienvenue dans le Gestionnaire de Chèvres, un projet construit avec Laravel. Ce
 - Création de chèvres avec des informations telles que le nom, la couleur, le prix, la date de naissance, et plus encore.
 - Modification des détails d'une chèvre existante.
 - Suppression d'une chèvre de la base de données.
-- Tableau de bord pour afficher toutes les chèvres qui vous appartiennent.
+- Tableau de bord pour afficher toutes les chèvres qui vous appartiennent (127.0.0.1:8000/dashboard).
 
 ## Comment Commencer
 
