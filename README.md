@@ -15,11 +15,11 @@ Bienvenue dans le Gestionnaire de Chèvres, un projet construit avec Laravel. Ce
 
 2. **Ajouter une Chèvre :** Une fois connecté, vous pouvez ajouter une nouvelle chèvre en fournissant les détails nécessaires via le formulaire de création.
 
-3. **Modifier ou Supprimer :** Utilisez le tableau de bord pour accéder à la liste de vos chèvres. Vous pouvez ensuite modifier ou supprimer une chèvre selon vos besoins.
+3. **Modifier ou Supprimer :** Utilisez le tableau de bord (127.0.0.1:8000/goats) pour accéder à la liste de vos chèvres. Vous pouvez ensuite modifier ou supprimer une chèvre selon vos besoins.
 
 ## Dashboard
 
-Le tableau de bord est l'endroit central pour gérer vos chèvres. Consultez la liste complète de vos chèvres et effectuez des actions rapides.
+Le tableau de bord est l'endroit central pour voir vos chèvres.
 
 ## Contribuer
 
