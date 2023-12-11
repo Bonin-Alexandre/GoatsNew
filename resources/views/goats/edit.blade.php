@@ -30,7 +30,7 @@
             <div class="mb-4 flex items-center justify-center">
                 <label for="sex" class="flex items-center">
                     <input type="checkbox" id="sex" name="sex" class="mr-2" {{ $goat->sex ? 'checked' : '' }}>
-                    <span class="text-sm font-medium text-gray-600">Sexe</span>
+                    <span class="text-sm font-medium text-gray-600">Est-ce une femelle ?</span>
                 </label>
             </div>
 

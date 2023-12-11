@@ -36,7 +36,7 @@
             <div class="mb-4 flex items-center justify-center">
                 <label for="sex" class="flex items-center">
                     <input type="checkbox" id="sex" name="sex" class="mr-2">
-                    <span class="text-sm font-medium text-gray-600">Sexe</span>
+                    <span class="text-sm font-medium text-gray-600">Est-ce une femelle ?</span>
                 </label>
             </div> 
 
@@ -46,18 +46,7 @@
                 @error('price')
                     <p class="text-red-500 text-xs italic">{{ $message }}</p>
                 @enderror
-            </div>
-
-            <div class="mb-4">
-                <label for="user_id" class="block text-sm font-medium text-gray-600">User_Id</label>
-                <select id="user_id" name="user_id" class="mt-1 p-2 w-full border rounded-md">
-                    <option value="1" {{ old('user_id') == 1 ? 'selected' : '' }}>1</option>
-                    <option value="2" {{ old('user_id') == 2 ? 'selected' : '' }}>2</option>
-                </select>
-                @error('user_id')
-                    <p class="text-red-500 text-xs italic">{{ $message }}</p>
-                @enderror
-            </div>            
+            </div>          
             
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Valider

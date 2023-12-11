@@ -19,9 +19,6 @@
             <x-th>
                 Sexe
             </x-th>
-            <x-th>
-                Détails d'une chèvre
-            </x-th>
         </tr>
     </head>
     <body>
@@ -36,8 +33,7 @@
                 </x-td>
                 <x-td>{{ $goat->price }}</x-td>
                 <x-td>{{ $goat->birthday }}</x-td>
-                <x-td>{{ $goat->sex }}</x-td>
-                <x-td><a href="/goats/{{ $goat->id }}">Voir plus</a></x-td>                  
+                <x-td>{{ $goat->sex ? 'Femelle' : 'Male' }}</x-td>
             </tr>
         @endforeach
     </body>

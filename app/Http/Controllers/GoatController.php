@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
 use App\Models\Goat;
+use Illuminate\Support\Facades\Auth;
+
  
 class GoatController extends Controller
 {
@@ -55,9 +57,16 @@ class GoatController extends Controller
         $g->name = request()->name;
         $g->price = request()->price;
         $g->color = request()->color;
-        $g->sex = request()->sex == 'Mr.' ? true : false ;
+        $g->sex = request()->has('sex') == 'Mr.' ? true : false ;
         $g->birthday = request()->birthday;
-        $g->user_id = request()->user_id;
+        $g->user_id = Auth::id();
+
+        $totalGoats = Goat::count();
+
+        $imageNumber = $totalGoats + 1;
+        $imageName = "/goat_" . $imageNumber . ".jpg";
+        $g->image_path = $imageName;
+
         $g->save();
         return redirect('/goats');
     }
