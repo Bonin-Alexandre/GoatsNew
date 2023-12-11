@@ -1,4 +1,4 @@
-![Logo du Gestionnaire de Chèvres]((https://c.clc2l.com/t/m/p/mpg-4kwM3o.png))
+![Logo du Gestionnaire de Chèvres](https://c.clc2l.com/t/m/p/mpg-4kwM3o.png)
 
 # Gestionnaire de Chèvres
 
